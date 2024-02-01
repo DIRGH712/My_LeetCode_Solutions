@@ -7,13 +7,15 @@ public:
         st.erase(beginword);
 
         while(!q.empty()){
+            //runs wordlist times
             string word = q.front().first;
             int steps = q.front().second;
             q.pop();
             if(word == endWord){
                 return steps;
             }
-
+            
+            // T = 0(wordList x words.lenght x 26 x logn of set)
             for(int i=0;i<word.size();i++){
                 char originalch = word[i];
                 for(char ch = 'a'; ch<='z';ch++){
