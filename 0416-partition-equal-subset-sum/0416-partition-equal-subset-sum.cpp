@@ -1,5 +1,6 @@
 class Solution {
 public:
+// https://takeuforward.org/data-structure/partition-equal-subset-sum-dp-15/
     bool canPartition(vector<int>& nums) {
         int target = 0;
 
