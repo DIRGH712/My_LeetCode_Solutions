@@ -1,27 +1,46 @@
-//Upvote and Comment :)
-
 class Solution {
 public:
     bool canPartition(vector<int>& nums) {
-        int resultant_sums = 0 ;
-        
-        //Adding all the elements of our vector
-        for (auto x : nums)
-            resultant_sums +=x;
-        
-        //Now think that the sum is odd in this special case we can never find two equal partitions
-        if(resultant_sums % 2) return false;
-        //Finding the half off the resultant sum
-        resultant_sums /= 2;
-        
-        //dp vector for storing the results of previous row i.e dp will keep for each number if it has a satisfying subset or not
-        vector<bool> dp(resultant_sums+1,false);
-        dp[0]=true;
-        for(auto x:nums){
-            for(int i=resultant_sums;i>=x;i--){
-                dp[i] = dp[i] || dp[i-x] ;//The "or" operator is used because for each number, either we use it or we don't
-            }
+        int target = 0;
+
+        for(int i=0;i<nums.size();i++){
+            target+= nums[i];
         }
-        return dp[resultant_sums];
+
+        if(target % 2 !=0 ) 
+            return false;
+        else {
+            int k = target /2;
+
+            vector<bool> prev(k + 1, false);
+            prev[0] = true;
+
+            if(nums[0]<=k) prev[nums[0]] = true;
+
+            for (int ind = 1; ind < nums.size(); ind++) {
+                // Create a vector to represent the current row of the DP table
+                vector<bool> cur(k + 1, false);
+                cur[0] = true;
+
+                for (int target = 1; target <= k; target++) {
+                    // Exclude the current element
+                    bool notTaken = prev[target];
+
+                    // Include the current element if it doesn't exceed the target
+                    bool taken = false;
+                    if (nums[ind] <= target)
+                        taken = prev[target - nums[ind]];
+
+                    // Update the current row of the DP table
+                    cur[target] = notTaken || taken;
+                }
+
+                // Set the current row as the previous row for the next iteration
+                prev = cur;
+            }
+            return prev[k];
+            
+        }    
+        
     }
 };
