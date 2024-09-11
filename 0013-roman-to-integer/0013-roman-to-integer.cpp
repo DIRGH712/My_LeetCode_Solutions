@@ -16,8 +16,7 @@ public:
 
         for(int i =  0; i<s.size(); i++){
             if(m[s[i]] < m[s[i+1]]){
-                ans += m[s[i+1]] - m[s[i]];
-                i++;
+                ans -= m[s[i]];
             }
             else{
                 ans += m[s[i]];
