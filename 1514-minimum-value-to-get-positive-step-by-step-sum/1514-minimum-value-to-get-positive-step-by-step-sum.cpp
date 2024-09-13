@@ -9,7 +9,7 @@ public:
         }
 
         if(mini <=0)
-            return 1 + (-1 * mini);
+            return 1 - mini;
         
         return 1;
     }
