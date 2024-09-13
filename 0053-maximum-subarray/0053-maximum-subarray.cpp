@@ -6,13 +6,8 @@ public:
 
         for(auto n : nums){
             sum += n;
-            if(sum > mini){
-                mini = sum;
-            }
-
-            if(sum <0){
-                sum = 0;
-            }
+            mini = max(sum,mini);
+            sum = sum < 0 ? 0 : sum;
         }
 
         return mini;
