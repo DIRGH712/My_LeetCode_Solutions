@@ -19,6 +19,7 @@
 |  |
 | ------- |
 | [0013-roman-to-integer](https://github.com/DIRGH712/My_LeetCode_Solutions/tree/master/0013-roman-to-integer) |
+| [2571-find-the-pivot-integer](https://github.com/DIRGH712/My_LeetCode_Solutions/tree/master/2571-find-the-pivot-integer) |
 ## Array
 |  |
 | ------- |
@@ -33,4 +34,5 @@
 | ------- |
 | [0303-range-sum-query-immutable](https://github.com/DIRGH712/My_LeetCode_Solutions/tree/master/0303-range-sum-query-immutable) |
 | [1514-minimum-value-to-get-positive-step-by-step-sum](https://github.com/DIRGH712/My_LeetCode_Solutions/tree/master/1514-minimum-value-to-get-positive-step-by-step-sum) |
+| [2571-find-the-pivot-integer](https://github.com/DIRGH712/My_LeetCode_Solutions/tree/master/2571-find-the-pivot-integer) |
 <!---LeetCode Topics End-->
