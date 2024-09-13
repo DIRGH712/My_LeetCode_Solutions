@@ -19,4 +19,16 @@
 |  |
 | ------- |
 | [0013-roman-to-integer](https://github.com/DIRGH712/My_LeetCode_Solutions/tree/master/0013-roman-to-integer) |
+## Array
+|  |
+| ------- |
+| [0303-range-sum-query-immutable](https://github.com/DIRGH712/My_LeetCode_Solutions/tree/master/0303-range-sum-query-immutable) |
+## Design
+|  |
+| ------- |
+| [0303-range-sum-query-immutable](https://github.com/DIRGH712/My_LeetCode_Solutions/tree/master/0303-range-sum-query-immutable) |
+## Prefix Sum
+|  |
+| ------- |
+| [0303-range-sum-query-immutable](https://github.com/DIRGH712/My_LeetCode_Solutions/tree/master/0303-range-sum-query-immutable) |
 <!---LeetCode Topics End-->
