@@ -32,6 +32,7 @@
 ## Design
 |  |
 | ------- |
+| [0295-find-median-from-data-stream](https://github.com/DIRGH712/My_LeetCode_Solutions/tree/master/0295-find-median-from-data-stream) |
 | [0303-range-sum-query-immutable](https://github.com/DIRGH712/My_LeetCode_Solutions/tree/master/0303-range-sum-query-immutable) |
 ## Prefix Sum
 |  |
@@ -44,4 +45,20 @@
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/DIRGH712/My_LeetCode_Solutions/tree/master/0053-maximum-subarray) |
+## Two Pointers
+|  |
+| ------- |
+| [0295-find-median-from-data-stream](https://github.com/DIRGH712/My_LeetCode_Solutions/tree/master/0295-find-median-from-data-stream) |
+## Sorting
+|  |
+| ------- |
+| [0295-find-median-from-data-stream](https://github.com/DIRGH712/My_LeetCode_Solutions/tree/master/0295-find-median-from-data-stream) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [0295-find-median-from-data-stream](https://github.com/DIRGH712/My_LeetCode_Solutions/tree/master/0295-find-median-from-data-stream) |
+## Data Stream
+|  |
+| ------- |
+| [0295-find-median-from-data-stream](https://github.com/DIRGH712/My_LeetCode_Solutions/tree/master/0295-find-median-from-data-stream) |
 <!---LeetCode Topics End-->
