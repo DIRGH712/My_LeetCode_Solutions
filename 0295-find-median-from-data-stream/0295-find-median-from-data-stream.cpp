@@ -18,46 +18,33 @@ public:
 
     /** Adds a number into the data structure. */
     void addNum(int num) {
-        // Step 1: Add to maxHeap
+        // Add the number to maxHeap
         maxHeap.push(num);
 
-        // Step 2: Balance the heaps
-        // Ensure every element in maxHeap is less than or equal to minHeap
-        if (!maxHeap.empty() && !minHeap.empty() && maxHeap.top() > minHeap.top()) {
-            int tempMax = maxHeap.top();
+        // Ensure that every number in maxHeap is less than or equal to every number in minHeap
+        if (!minHeap.empty() && maxHeap.top() > minHeap.top()) {
+            minHeap.push(maxHeap.top());
             maxHeap.pop();
-            int tempMin = minHeap.top();
-            minHeap.pop();
-
-            maxHeap.push(tempMin);
-            minHeap.push(tempMax);
         }
 
-        // Step 3: Maintain size property
-        // The sizes of the heaps should not differ by more than 1
+        // Balance the heaps if necessary (sizes must differ by at most 1)
         if (maxHeap.size() > minHeap.size() + 1) {
-            int temp = maxHeap.top();
+            minHeap.push(maxHeap.top());
             maxHeap.pop();
-            minHeap.push(temp);
-        } else if (minHeap.size() > maxHeap.size() + 1) {
-            int temp = minHeap.top();
+        } else if (minHeap.size() > maxHeap.size()) {
+            maxHeap.push(minHeap.top());
             minHeap.pop();
-            maxHeap.push(temp);
         }
     }
 
     /** Returns the median of current data stream */
     double findMedian() {
-        if (maxHeap.size() == minHeap.size()) {
-            // If even number of elements, median is the average of two middle values
-            return ((double)maxHeap.top() + minHeap.top()) / 2.0;
-        } else if (maxHeap.size() > minHeap.size()) {
-            // If maxHeap has more elements
-            return (double)maxHeap.top();
-        } else {
-            // If minHeap has more elements
-            return (double)minHeap.top();
-        }
+        // If the number of elements is odd, return the top of the heap with more elements
+        if (maxHeap.size() > minHeap.size()) {
+            return maxHeap.top();
+        } 
+        // If the number of elements is even, return the average of the two middle elements
+        return (maxHeap.top() + minHeap.top()) / 2.0;
     }
 };
 
@@ -67,4 +54,3 @@ public:
  * obj->addNum(num);
  * double param_2 = obj->findMedian();
  */
-
