@@ -16,6 +16,7 @@
 |  |
 | ------- |
 | [0013-roman-to-integer](https://github.com/DIRGH712/My_LeetCode_Solutions/tree/master/0013-roman-to-integer) |
+| [0037-sudoku-solver](https://github.com/DIRGH712/My_LeetCode_Solutions/tree/master/0037-sudoku-solver) |
 | [0560-subarray-sum-equals-k](https://github.com/DIRGH712/My_LeetCode_Solutions/tree/master/0560-subarray-sum-equals-k) |
 ## Math
 |  |
@@ -25,6 +26,7 @@
 ## Array
 |  |
 | ------- |
+| [0037-sudoku-solver](https://github.com/DIRGH712/My_LeetCode_Solutions/tree/master/0037-sudoku-solver) |
 | [0053-maximum-subarray](https://github.com/DIRGH712/My_LeetCode_Solutions/tree/master/0053-maximum-subarray) |
 | [0303-range-sum-query-immutable](https://github.com/DIRGH712/My_LeetCode_Solutions/tree/master/0303-range-sum-query-immutable) |
 | [0560-subarray-sum-equals-k](https://github.com/DIRGH712/My_LeetCode_Solutions/tree/master/0560-subarray-sum-equals-k) |
@@ -61,4 +63,12 @@
 |  |
 | ------- |
 | [0295-find-median-from-data-stream](https://github.com/DIRGH712/My_LeetCode_Solutions/tree/master/0295-find-median-from-data-stream) |
+## Backtracking
+|  |
+| ------- |
+| [0037-sudoku-solver](https://github.com/DIRGH712/My_LeetCode_Solutions/tree/master/0037-sudoku-solver) |
+## Matrix
+|  |
+| ------- |
+| [0037-sudoku-solver](https://github.com/DIRGH712/My_LeetCode_Solutions/tree/master/0037-sudoku-solver) |
 <!---LeetCode Topics End-->
