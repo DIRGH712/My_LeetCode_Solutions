@@ -22,6 +22,7 @@
 |  |
 | ------- |
 | [0013-roman-to-integer](https://github.com/DIRGH712/My_LeetCode_Solutions/tree/master/0013-roman-to-integer) |
+| [0060-permutation-sequence](https://github.com/DIRGH712/My_LeetCode_Solutions/tree/master/0060-permutation-sequence) |
 | [2571-find-the-pivot-integer](https://github.com/DIRGH712/My_LeetCode_Solutions/tree/master/2571-find-the-pivot-integer) |
 ## Array
 |  |
@@ -71,4 +72,8 @@
 |  |
 | ------- |
 | [0037-sudoku-solver](https://github.com/DIRGH712/My_LeetCode_Solutions/tree/master/0037-sudoku-solver) |
+## Recursion
+|  |
+| ------- |
+| [0060-permutation-sequence](https://github.com/DIRGH712/My_LeetCode_Solutions/tree/master/0060-permutation-sequence) |
 <!---LeetCode Topics End-->
