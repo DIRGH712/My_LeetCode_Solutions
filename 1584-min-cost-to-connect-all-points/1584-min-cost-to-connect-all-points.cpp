@@ -1,38 +1,34 @@
 class Solution {
 public:
     int minCostConnectPoints(vector<vector<int>>& points) {
+        int sum = 0;
         int n = points.size();
 
+        
+
         priority_queue<pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>>> pq;
-        vector<int> vis(n,0);
+        vector<int> visited(n,0);
 
         pq.push({0,0});
-        int edgesUsed = 0;
-        int totalcost = 0;
-
-        while(edgesUsed < n){
+        
+        while(!pq.empty()){
             auto it = pq.top();
             pq.pop();
-
             int wt = it.first;
             int node = it.second;
-            if(vis[node]){
-                continue;
-            }
-
-            vis[node] = 1;
-            totalcost+=wt;
-            edgesUsed++;
-
+            if(visited[node] == 1) continue;
+            sum += wt;
+            visited[node] = 1;
+            
             for(int adjnode = 0; adjnode<n; adjnode++){
-                if(!vis[adjnode]){
-                    int nextwt = abs(points[node][0] - points[adjnode][0]) + 
-                                    abs(points[node][1] - points[adjnode][1]);
-                    pq.push({nextwt,adjnode});
+                if(!visited[adjnode]){
+                    int newwt = abs(points[adjnode][0] - points[node][0]) + abs(points[adjnode][1] - points[node][1]);
+                    pq.push({newwt,adjnode});
                 }
             }
+
         }
 
-        return totalcost;
+        return sum;
     }
 };
